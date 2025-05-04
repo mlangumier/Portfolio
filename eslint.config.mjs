@@ -16,7 +16,7 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends('next', 'next/core-web-vitals', 'next/typescript', 'plugin:react/recommended', 'prettier'),
   {
-    ignores: ['./docker-compose.yml', './Dockerfile.dev', '**/.*'],
+    ignores: ['./docker-compose.yml', './Dockerfile.dev', '**/.*', './next-env.d.ts'],
   },
   {
     plugins: {
